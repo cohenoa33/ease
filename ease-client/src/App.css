@@ -100,7 +100,7 @@ width: 90%;
   height: 30vh;
   text-align: justify;
   text-justify: inter-word;
-  width:80%;
+  width:0%;
 }
   .box:first-child  {
    margin-top: 1rem;
@@ -112,7 +112,3 @@ width: 90%;
 
  
 }
- /* .app-footer{
-         position: absolute; 
- } */
- 
