@@ -1,29 +1,45 @@
 .page {
   background-color: rgb(44, 99, 151);
+    color: rgb(242, 243, 165);
+    text-align: center;
+    
 }
 
 .app-header {
   min-height: 10vh;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  text-align: center;
-  color: white;
+  color: azure;
   padding: 0.5rem 1.5rem
+}
+.app-footer {
+  position: relative;
+  font-size: calc(10px + 2vmin);
+  color: rgb(236, 0, 158);
+      text-align: left;
+      padding: 1.5rem 1.5rem;
+      margin: 0 auto;
+    background-color: aquamarine;
+
+max-width: 1800px;
+}
+.footer-title {
+  font-size: calc(10px + 3vmin);
+  font-weight: 800;
+
+}
+.footer-text {
+  font-size: calc(10px + 1vmin);
 }
 
 .title {
   font-size: calc(10px + 5vmin);
   font-weight: 800;
-  padding-top: 1.5rem;
+
 }
-.sub-title {
-  font-size: calc(15px + 2vmin);
-  font-weight: 600;
-  padding-bottom: 1.5rem;
-}
+
+
 
 .strip {
   background-color: #d4df3c;
@@ -32,22 +48,31 @@
   display: flex;
   flex-direction: row;
   align-items: top;
-
+max-width: 1800px;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgb(56, 56, 56);
+  margin:  0 auto;
+}
+
+
+.image {
+object-fit: cover;
+width: 100%;
+max-width: 1800px;
+height: 400px;
+object-position: 50% 70%;
+padding: 1.5rem; 
 }
 
 
 .box {
-  border: 0.25rem solid rgb(94, 44, 151);
+   background-color: rgb(44, 99, 151);
   padding:  1.5rem;
   margin: 1.5rem; 
   overflow-y: auto;
- text-align: justify;
-  text-justify: inter-word;
-    width:50%;
+  width:100%;
 }
+
 
 
 
@@ -55,14 +80,19 @@
 @media screen and (max-width: 600px) {
   .strip {
     flex-direction: column;
-    background: pink;
+height:50vh;
     padding: 0;
     justify-items: center;
+    max-width: 100%;
   }
 
+  .image {
+margin-right: 0.5rem;
+width: 90%;
+  }
+
+
   .box {
-  border: 0.25rem solid rgb(94, 44, 151);
-  padding:  0.5rem;
   margin: 0 auto;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -70,7 +100,7 @@
   height: 30vh;
   text-align: justify;
   text-justify: inter-word;
-     width:80%;
+  width:80%;
 }
   .box:first-child  {
    margin-top: 1rem;
@@ -79,6 +109,10 @@
   .box:last-child  {
    margin-bottom: 1rem;
 }
- 
+
  
 }
+ /* .app-footer{
+         position: absolute; 
+ } */
+ 
