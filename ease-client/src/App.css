@@ -28,7 +28,6 @@
 
 /* FOOTER */
 .app-footer {
-  position: relative;
   font-size: calc(10px + 2vmin);
   color: rgb(236, 0, 158);
   text-align: left;
@@ -39,11 +38,13 @@
 }
 
 .footer-title {
-
   font-size: calc(10px + 3vmin);
   font-weight: 800;
 }
 
+.footer-sub-title {
+  font-size: calc(10px + 1.5vmin);
+}
 .footer-text {
   font-size: calc(10px + 1vmin);
 }
@@ -104,7 +105,7 @@ padding: 1.5rem;
   height: 30vh;
   text-align: justify;
   text-justify: inter-word;
-  width:0%;
+  width:80%;
 }
   .box:first-child  {
    margin-top: 1rem;

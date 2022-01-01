@@ -56,8 +56,8 @@ function App() {
 
       <div className="app-footer">
         <span className="footer-title"> NAME </span>
-        <span className="footer-text">WEB SUB TITLE. </span>
-        <div>Contact</div>
+        <span className="footer-sub-title">WEB SUB TITLE. </span>
+        <div className="footer-text">Contact</div>
       </div>
     </div>
   );
