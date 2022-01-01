@@ -5,6 +5,7 @@
     
 }
 
+/* HEADER */
 .app-header {
   min-height: 10vh;
   align-items: center;
@@ -13,34 +14,41 @@
   color: azure;
   padding: 0.5rem 1.5rem
 }
-.app-footer {
-  position: relative;
-  font-size: calc(10px + 2vmin);
-  color: rgb(236, 0, 158);
-      text-align: left;
-      padding: 1.5rem 1.5rem;
-      margin: 0 auto;
-    background-color: aquamarine;
-
-max-width: 1800px;
-}
-.footer-title {
-  font-size: calc(10px + 3vmin);
-  font-weight: 800;
-
-}
-.footer-text {
-  font-size: calc(10px + 1vmin);
-}
 
 .title {
   font-size: calc(10px + 5vmin);
   font-weight: 800;
+  color: azure;
+  transition: color 2s
 
 }
+.title:hover {
+ color: rgb(218,165,32)
+}
 
+/* FOOTER */
+.app-footer {
+  position: relative;
+  font-size: calc(10px + 2vmin);
+  color: rgb(236, 0, 158);
+  text-align: left;
+  padding: 1.5rem 1.5rem;
+  margin: 0 auto;
+  background-color: aquamarine;
+  max-width: 1800px;
+}
 
+.footer-title {
 
+  font-size: calc(10px + 3vmin);
+  font-weight: 800;
+}
+
+.footer-text {
+  font-size: calc(10px + 1vmin);
+}
+
+/* STRIP */
 .strip {
   background-color: #d4df3c;
   height: 30vh;
@@ -48,12 +56,11 @@ max-width: 1800px;
   display: flex;
   flex-direction: row;
   align-items: top;
-max-width: 1800px;
+  max-width: 1800px;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   margin:  0 auto;
 }
-
 
 .image {
 object-fit: cover;
@@ -63,7 +70,6 @@ height: 400px;
 object-position: 50% 70%;
 padding: 1.5rem; 
 }
-
 
 .box {
    background-color: rgb(44, 99, 151);
@@ -75,22 +81,20 @@ padding: 1.5rem;
 
 
 
-
-
+/* MEDIA  */
 @media screen and (max-width: 600px) {
   .strip {
     flex-direction: column;
-height:50vh;
+    height:50vh;
     padding: 0;
     justify-items: center;
     max-width: 100%;
   }
 
   .image {
-margin-right: 0.5rem;
-width: 90%;
+    margin-right: 0.5rem;
+    width: 90%;
   }
-
 
   .box {
   margin: 0 auto;
@@ -110,5 +114,4 @@ width: 90%;
    margin-bottom: 1rem;
 }
 
- 
 }
