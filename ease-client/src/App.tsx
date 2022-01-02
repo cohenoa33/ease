@@ -8,7 +8,13 @@ function App() {
     let max = 2;
 
     // set the best max in a row options
+    if (boxes.length % 2 === 0) {
+      max = 2;
+    }
     if (boxes.length % 3 === 0) max = 3;
+    if (boxes.length > 6) {
+      max = 3;
+    }
 
     let data = boxes;
     let element = [];
@@ -18,7 +24,7 @@ function App() {
       data = data.slice(max);
     }
 
-    // Check for lest data to render
+    // Check for remaining data to render
     if (data.length > 0) {
       element.push(createStrip(data, true));
     }
@@ -31,7 +37,7 @@ function App() {
         <div className="title"> NAME </div>
         <div className="sub-title">WEB SUB TITLE. </div>
       </div>
-      <div className="strip" style={{ background: "purple", height: "400px" }}>
+      <div className="strip" style={{ background: "purple" }}>
         <img src="../gold-pond.jpg" alt="Nature" className="image" />
       </div>
       {createBox()}
@@ -86,15 +92,12 @@ function createStrip(
   boxes: { title: string; text: string }[],
   single?: boolean
 ): JSX.Element {
+  const className = single ? "box single-box" : "box";
   return (
-    <div className="strip">
+    <div className={"strip"}>
       {boxes.map((box) => (
         <>
-          <div
-            className="box"
-            key={box.title}
-            style={single ? { width: "80%" } : {}}
-          >
+          <div className={className} key={box.title}>
             {box.title} {single}
             <br />
             {box.text}

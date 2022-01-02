@@ -35,7 +35,7 @@ export const boxes = [
   },
   {
     title: "fifth",
-    text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever"
+    text: "Lorem"
   },
   {
     title: "sixth",
