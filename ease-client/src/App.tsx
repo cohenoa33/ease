@@ -1,36 +1,8 @@
 import "./App.css";
-
 import { boxes } from "./mockData";
+import { createBox } from "./helpers";
 
 function App() {
-  function createBox() {
-    if (boxes.length === 0) return <></>;
-    let max = 2;
-
-    // set the best max in a row options
-    if (boxes.length % 2 === 0) {
-      max = 2;
-    }
-    if (boxes.length % 3 === 0) max = 3;
-    if (boxes.length > 6) {
-      max = 3;
-    }
-
-    let data = boxes;
-    let element = [];
-
-    while (data.length > max) {
-      element.push(createStrip(data.slice(0, max)));
-      data = data.slice(max);
-    }
-
-    // Check for remaining data to render
-    if (data.length > 0) {
-      element.push(createStrip(data, true));
-    }
-    return <>{element}</>;
-  }
-
   return (
     <div className="page">
       <div className="app-header">
@@ -40,7 +12,7 @@ function App() {
       <div className="strip" style={{ background: "purple" }}>
         <img src="../gold-pond.jpg" alt="Nature" className="image" />
       </div>
-      {createBox()}
+      {createBox(boxes)}
       <div className="strip single">
         <div className="box">
           It is a long established fact that a reader will be distracted by the
@@ -87,23 +59,3 @@ function App() {
 }
 
 export default App;
-
-function createStrip(
-  boxes: { title: string; text: string }[],
-  single?: boolean
-): JSX.Element {
-  const className = single ? "box single-box" : "box";
-  return (
-    <div className={"strip"}>
-      {boxes.map((box) => (
-        <>
-          <div className={className} key={box.title}>
-            {box.title} {single}
-            <br />
-            {box.text}
-          </div>
-        </>
-      ))}
-    </div>
-  );
-}
