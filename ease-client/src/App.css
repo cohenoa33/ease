@@ -11,6 +11,7 @@
   background-color: var(--main-background);
   color: var(--main-text);
   text-align: center;
+  
     
 }
 
@@ -91,18 +92,72 @@ margin: 0 1.5rem;
   max-width: 1800px;
   overflow-y: auto;
   width:100%;
+  border-radius:0.5rem;
+
 }
 
 .single-box {
   width:75%;
   margin-bottom: 5.5rem;
+
 }
 
 .single {
   padding: 0 auto;
   margin: 0 auto;
 }
+/* Pop up */
+.pop-up {
+border-radius:0.5rem;
+min-height: 15rem;
+position: absolute;
+align-content: center;  
+top: 25%;
+left: 15%;
+right: 15%;
+background-color: rgb(231, 28, 62);
+z-index: 5;
+padding: 2.5rem;
+  animation: fadeIn linear 0.25s;
+  -webkit-animation: fadeIn linear 0.25s;
+  -moz-animation: fadeIn linear 0.25s;
+  -o-animation: fadeIn linear 0.25s;
+  -ms-animation: fadeIn linear 0.25s;
+}
 
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.btn-container{
+  text-align: right;
+}
+.btn-x{
+  background-color: transparent;
+  border: none;
+  font-size:1.15rem
+}
 
 
 
@@ -144,9 +199,17 @@ width: 90%;
   margin-bottom:  0.5rem;
 }
   .box:last-child  {
-   color: red;
    margin-bottom: 0.5rem;
 }
 
+
+.pop-up {
+left:1vh;
+right:1vh;
+width: auto;
+top: 15vh;
+position: fixed;
+
+}
 }
 
