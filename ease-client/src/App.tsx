@@ -1,4 +1,4 @@
-import "./App.css";
+import "./App.scss";
 import { Page, Home } from "./containers";
 
 function App() {
