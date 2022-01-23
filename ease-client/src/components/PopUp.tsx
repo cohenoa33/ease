@@ -1,11 +1,11 @@
 import type { Box as BoxType } from "../types";
 import { titleCase, validateParagraph } from "../helpers";
 
-export function PopUp({ box, close }: PopUpProps) {
+export function PopUp({ box, close, index }: PopUpProps) {
   return (
     <div className="pop-up">
       <div className="btn-container">
-        <button className="btn-x" onClick={close}>
+        <button className="btn-x" onClick={() => close(index)}>
           X
         </button>
       </div>
@@ -21,5 +21,6 @@ export function PopUp({ box, close }: PopUpProps) {
 
 interface PopUpProps {
   box: BoxType;
-  close: () => void;
+  index: number;
+  close: (index: number) => void;
 }

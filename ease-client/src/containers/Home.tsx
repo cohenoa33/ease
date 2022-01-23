@@ -7,15 +7,15 @@ export function Home() {
   const [open, setOpen] = useState(false);
   const [box, setBox] = useState(0);
 
-  const handlePopUp = (index?: number) => {
+  const handlePopUp = (index: number) => {
     setOpen(!open);
-    if (index) setBox(index);
+    setBox(index);
   };
 
   return (
     <>
       <Image src={"../gold-pond.jpg"} alt="Nature" />
-      {open && <PopUp box={boxes[box]} close={handlePopUp} />}
+      {open && <PopUp box={boxes[box]} index={box} close={handlePopUp} />}
       <Boxes boxes={boxes} open={handlePopUp} />
       <SingleBox
         title={"single box text"}
