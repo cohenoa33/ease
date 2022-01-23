@@ -11,6 +11,7 @@ export interface ImageProps {
 
 export interface SingleBoxProps {
   text: string;
+  title?: string;
 }
 
 export interface WebData {

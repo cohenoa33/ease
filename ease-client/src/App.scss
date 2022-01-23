@@ -1,6 +1,6 @@
 
- $main-background: #2b7a78;
- $secondary-background: #3aafa9;
+  $main-background: #2b7a78;
+  $secondary-background: #3aafa9;
   $main-text:#feffff;
   $secondary-text:#def2f1;
   $sub-text:   rgb(44, 99, 151);
@@ -46,6 +46,7 @@
   margin: 0 auto;
   margin-top:1.5rem;
   max-width: 1800px;
+  background-color:$secondary-background
 }
 
 .footer-title {
@@ -62,7 +63,7 @@
 
 /* STRIP */
 .strip {
-  background-color: $secondary-background;
+  // background-color: $secondary-background;
   height: auto;
   padding: 0 1.5rem 0 1.5rem;
   display: flex;
@@ -86,7 +87,7 @@ margin: 0 1.5rem;
 }
 
 .box {
-  background-color: $main-background;
+  background-color: #4a8381;
   padding:  1.5rem;
   margin: 1.5rem; 
   min-height: auto;
@@ -94,6 +95,7 @@ margin: 0 1.5rem;
   overflow-y: auto;
   width:100%;
   border-radius:0.5rem;
+  box-shadow:5px 5px 5px  #5d7e7d;
 
 }
 
@@ -101,6 +103,23 @@ margin: 0 1.5rem;
   width:75%;
   margin-bottom: 5.5rem;
 
+}
+
+.box-title{
+  font-size:2.5rem;
+  font-weight:700;
+  color: $secondary-text;
+}
+.box-sub-title{
+  font-size: 1.5rem;
+  padding-top:0.75rem;
+}
+
+.box-text{
+  font-size: 1.15rem;
+  line-height: 1.5rem;
+  padding: 1.5rem;
+  text-align: justify;
 }
 
 .single {
@@ -111,11 +130,12 @@ margin: 0 1.5rem;
 .pop-up {
 border-radius:0.5rem;
 min-height: 15rem;
-position: absolute;
 align-content: center;  
-top: 25%;
-left: 15%;
-right: 15%;
+ position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
 background-color:$sub-text;
 z-index: 5;
 padding: 2.5rem;
@@ -205,10 +225,7 @@ width: 90%;
 
 
 .pop-up {
-left:1vh;
-right:1vh;
-width: auto;
-top: 15vh;
+width: 75%;
 position: fixed;
 
 }

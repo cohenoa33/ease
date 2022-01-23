@@ -1,4 +1,5 @@
 import type { Box as BoxType } from "../types";
+import { titleCase, validateParagraph } from "../helpers";
 
 export function PopUp({ box, close }: PopUpProps) {
   return (
@@ -8,11 +9,12 @@ export function PopUp({ box, close }: PopUpProps) {
           X
         </button>
       </div>
-      {box.title}
-      <br />
-      {box.subTitle}
-      <br />
-      {box.text}
+      <div className={"box-title"}> {titleCase(box.title)}</div>
+      <div className={"box-sub-title"}> {titleCase(box.subTitle, true)}</div>
+      <div className={"box-text"}>
+        {" "}
+        {validateParagraph(titleCase(box.text))}
+      </div>
     </div>
   );
 }
