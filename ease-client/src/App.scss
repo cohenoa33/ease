@@ -138,7 +138,7 @@ align-content: center;
     width: 50%;
 background-color:$sub-text;
 z-index: 5;
-padding: 2.5rem;
+padding: 0.5rem;
   animation: fadeIn linear 0.25s;
   -webkit-animation: fadeIn linear 0.25s;
   -moz-animation: fadeIn linear 0.25s;
@@ -173,11 +173,17 @@ padding: 2.5rem;
 
 .btn-container{
   text-align: right;
+
 }
 .btn-x{
-  background-color: transparent;
+  background-color: $main-text;
+  color: $sub-text;;
   border: none;
-  font-size:1.15rem
+  padding:  0 0.15rem;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  font-size: 0.65rem;
 }
 
 
