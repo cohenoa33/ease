@@ -1,0 +1,40 @@
+@import "./variables.scss";
+.navbar{
+  position: fixed;
+  top: 3%;
+  right: 0;
+  margin-right:  0.5rem;
+  cursor: pointer;
+}
+.open-bar{
+    background: mediumslateblue;
+    min-height:5vh;
+}
+
+.navbar-bar1, .navbar-bar2, .navbar-bar3{
+width: 20px;
+  height: 4px;
+  background-color: $main-text;;
+  margin: 4px 0;
+transition: 0.4s;
+
+}
+
+/* Rotate first bar */
+.change .navbar-bar1 {
+  -webkit-transform: rotate(-45deg) ;
+  transform: rotate(-45deg) 
+
+}
+
+/* Fade out the second bar */
+.change .navbar-bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .navbar-bar3 {
+  -webkit-transform: rotate(45deg) translate(-11px, -11.5px) ;
+  transform: rotate(45deg) translate(-11px, -11.5px) ;
+
+}

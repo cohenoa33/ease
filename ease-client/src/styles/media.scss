@@ -1,0 +1,52 @@
+@import "./variables.scss";
+
+
+/* MEDIA  */
+@media screen and (max-width: 600px) {
+  .strip {
+    flex-direction: column;
+    padding: 0;
+    justify-items: center;
+    max-width: 100%;
+  }
+
+  .image {
+ margin: 0 auto;
+ padding: 0;
+ max-height: 200px;
+width: 90%;
+
+  }
+
+  .box {
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  margin-bottom:  0.5rem;
+  overflow-y: auto;
+  text-align: justify;
+  text-justify: inter-word;
+  width:80%;
+  min-height: auto;
+}
+
+.single {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  min-height: auto;
+}
+ .single-box {
+  width:80%;
+  margin-bottom:  0.5rem;
+}
+  .box:last-child  {
+   margin-bottom: 0.5rem;
+}
+
+
+.pop-up {
+width: 75%;
+position: fixed;
+
+}
+}
+

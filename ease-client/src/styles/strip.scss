@@ -1,0 +1,68 @@
+@import "./variables.scss";
+
+/* STRIP */
+.strip {
+  // background-color: $secondary-background;
+  height: auto;
+  padding: 0 1.5rem 0 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: top;
+  max-width: 1800px;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  margin:  0 auto;
+}
+
+
+.image {
+object-fit: cover;
+width: 100%;
+max-width: 1800px;
+max-height: 400px;
+object-position: 50% 70%;
+margin: 0 1.5rem; 
+
+}
+
+.box {
+  background-color: #4a8381;
+  padding:  1.5rem;
+  margin: 1.5rem; 
+  min-height: auto;
+  max-width: 1800px;
+  overflow-y: auto;
+  width:100%;
+  border-radius:0.5rem;
+  box-shadow:3px 3px 3px  #5c8382;
+
+}
+
+.single-box {
+  width:75%;
+  margin-bottom: 5.5rem;
+
+}
+
+.box-title{
+  font-size:2.5rem;
+  font-weight:700;
+  color: $secondary-text;
+}
+.box-sub-title{
+  font-size: 1.5rem;
+  padding-top:0.75rem;
+}
+
+.box-text{
+  font-size: 1.15rem;
+  line-height: 1.5rem;
+  padding: 1.5rem;
+  text-align: justify;
+}
+
+.single {
+  padding: 0 auto;
+  margin: 0 auto;
+}
+
