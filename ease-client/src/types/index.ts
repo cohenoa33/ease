@@ -10,7 +10,7 @@ export interface ImageProps {
 }
 
 export interface SingleBoxProps {
-  text: string;
+  text?: string;
   title?: string;
 }
 

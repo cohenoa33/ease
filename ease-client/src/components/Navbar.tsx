@@ -4,7 +4,7 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
   return (
     <>
-      {open && <div className="open-bar"> Im gonna be a navbar! </div>}
+      {open && <div className="open-bar">Navbar?</div>}
       <div
         className={open ? `change navbar` : `navbar`}
         onClick={() => {

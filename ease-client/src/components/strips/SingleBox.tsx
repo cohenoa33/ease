@@ -8,7 +8,7 @@ export function SingleBox({ text, title }: SingleBoxProps): ReactElement {
     <Strip>
       <div className="box">
         <div className="box-title"> {title && titleCase(title)}</div>
-        <div className={"box-text"}> {titleCase(text, true)}</div>
+        <div className={"box-text"}> {text && titleCase(text, true)}</div>
       </div>
     </Strip>
   );

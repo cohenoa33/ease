@@ -2,7 +2,7 @@
 
 /* HEADER */
 .app-header {
-  min-height: 10vh;
+  height: 12vh;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -11,6 +11,7 @@
 }
 
 .title {
+  margin-top: 0.5rem;
   font-size: calc(10px + 5vmin);
   font-weight: 800;
   color: $secondary-text;
