@@ -16,8 +16,9 @@ export function Home() {
     <>
       <Image src={"../gold-pond.jpg"} alt="Nature" />
       {open && <PopUp box={boxes[box]} index={box} close={handlePopUp} />}
-      <Boxes boxes={boxes} open={handlePopUp} />
+      <Boxes boxes={boxes} open={handlePopUp} section={"boxes"} />
       <SingleBox
+        section={"first-single-box"}
         title={"single box text"}
         text="It is a long established fact that a reader will be distracted by the 
          readable content of a page when looking at its layout. The point of using 
@@ -47,7 +48,11 @@ export function Home() {
           Various versions have evolved over the years, sometimes by accident,
           sometimes on purpose (injected humour and the like)."
       />
-      <SingleBox text="It is a long established fact that a reader will be distracted by the" />
+      <SingleBox
+        title=""
+        text="It is a long established fact that a reader will be distracted by the"
+        section={"second-single-box"}
+      />
     </>
   );
 }

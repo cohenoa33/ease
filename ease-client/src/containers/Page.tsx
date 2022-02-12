@@ -5,8 +5,8 @@ import { WebData } from "../types";
 export function Page({ children, webData }: PageProps) {
   return (
     <div className="page">
-      <Header webData={webData} />
       <Navbar />
+      <Header webData={webData} />
       {children}
       <Footer webData={webData} />
     </div>

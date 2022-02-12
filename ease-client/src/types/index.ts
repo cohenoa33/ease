@@ -10,8 +10,9 @@ export interface ImageProps {
 }
 
 export interface SingleBoxProps {
-  text?: string;
-  title?: string;
+  text: string;
+  title: string;
+  section: string;
 }
 
 export interface WebData {

@@ -3,13 +3,17 @@ import type { SingleBoxProps } from "../../types";
 import { Strip } from "../Strip";
 import { titleCase } from "../../helpers";
 
-export function SingleBox({ text, title }: SingleBoxProps): ReactElement {
+export function SingleBox({
+  text,
+  title,
+  section
+}: SingleBoxProps): ReactElement {
   return (
-    <section id="single-box">
+    <section id={section}>
       <Strip>
         <div className="box">
-          <div className="box-title"> {title && titleCase(title)}</div>
-          <div className={"box-text"}> {text && titleCase(text, true)}</div>
+          <div className="box-title"> {titleCase(title)}</div>
+          <div className={"box-text"}> {titleCase(text, true)}</div>
         </div>
       </Strip>
     </section>

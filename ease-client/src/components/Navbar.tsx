@@ -7,7 +7,13 @@ export function Navbar() {
       {open && (
         <HashRouter>
           <div className="open-bar">
-            <a href="#single-box">Single Box</a>
+            <a href="#home">Home</a>
+            <br />
+            <a href="#boxes">Boxes</a>
+            <br />
+            <a href="#first-single-box">Single Box</a>
+            <br />
+            <a href="#second-single-box">Other Box</a>
           </div>
         </HashRouter>
       )}
